@@ -69,7 +69,7 @@
 +              }
 +          }
 +
-+          $command = 'Domain_Zone_AddTypeA' unless ($replyCheck =~ /\hostname = '$subdomain'$/);
++          $command = 'Domain_Zone_AddTypeA' unless ($replyCheck =~ /\_hostname = '$subdomain'$/);
 +          info("command %s - domain %s - subdomain %s - h %s", $command, $domain, $subdomain, $h);
 +
 +
