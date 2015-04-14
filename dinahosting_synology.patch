@@ -54,22 +54,22 @@
 +          # check if zone exists (Domain_Zone_UpdateTypeA) or not (Domain_Zone_AddTypeA)
 +          my $command = 'Domain_Zone_UpdateTypeA';
 +
-+          unless($replyCheck) {
-+              my $urlCheck = "https://$config{$h}{'server'}$config{$h}{'script'}";
-+              $urlCheck  .= "?AUTH_USER=$config{$h}{'login'}";
-+              $urlCheck  .= "&AUTH_PWD=$config{$h}{'password'}";
-+              $urlCheck  .= "&domain=$domain";
-+              $urlCheck  .= "&command=Domain_Zone_GetTypeA";
-+              #info("urlCheck %s", $urlCheck);
++          #unless($replyCheck) {
++          #    my $urlCheck = "https://$config{$h}{'server'}$config{$h}{'script'}";
++          #    $urlCheck  .= "?AUTH_USER=$config{$h}{'login'}";
++          #    $urlCheck  .= "&AUTH_PWD=$config{$h}{'password'}";
++          #    $urlCheck  .= "&domain=$domain";
++          #    $urlCheck  .= "&command=Domain_Zone_GetTypeA";
++          #    #info("urlCheck %s", $urlCheck);
++          #
++          #    $replyCheck = geturl(opt('proxy'), $urlCheck);
++          #    if (!defined($replyCheck) || !$replyCheck) {
++          #         failed("checkzone %s: Could not connect to %s.", $h, $config{$h}{'server'});
++          #         last;
++          #    }
++          #}
 +
-+              $replyCheck = geturl(opt('proxy'), $urlCheck);
-+              if (!defined($replyCheck) || !$replyCheck) {
-+                   failed("checkzone %s: Could not connect to %s.", $h, $config{$h}{'server'});
-+                   last;
-+              }
-+          }
-+
-+          $command = 'Domain_Zone_AddTypeA' unless ($replyCheck =~ /\_hostname = '$subdomain'$/);
++          #$command = 'Domain_Zone_AddTypeA' unless ($replyCheck =~ /\_hostname = '$subdomain'$/);
 +          info("command %s - domain %s - subdomain %s - h %s", $command, $domain, $subdomain, $h);
 +
 +
