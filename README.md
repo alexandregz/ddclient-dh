@@ -23,7 +23,7 @@ root@voyager:/volume1/@appstore/ddnsupdater#
 
 **Domain zone type A** must be created before to use patch files
 
-~~_dinahosting_synology.patch_ can create new zones automatically~~ this feature needs debug
+~~_dinahosting_synology.patch_ can create new zones automatically~~ this feature needs debug -problems with update
 
 
 # Files
