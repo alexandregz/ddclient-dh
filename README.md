@@ -8,6 +8,8 @@ Apply patch file as usual.
 Execute ddclient with help option to update .dat file (Qtip package [DDNS updater](https://www.cphub.net/?id=40&pid=304) uses this file to show providers). Then, config ddclient from Synology Desktop.
 
 ```shell
+root@voyager:/volume1/@appstore/ddnsupdater# cd /volume1/@appstore/ddnsupdater/ && wget https://raw.githubusercontent.com/alexandregz/ddclient-dh/master/dinahosting_synology.patch
+[...]
 root@voyager:/volume1/@appstore/ddnsupdater# patch < dinahosting_synology.patch
 patching file ddclient
 root@voyager:/volume1/@appstore/ddnsupdater# ./ddclient --help > tmp/ddnshelp.dat
