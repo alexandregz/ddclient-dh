@@ -1,6 +1,9 @@
 # ddclient-dh
 ddclient patch to support dinahosting domains
 
+# DEPRECATED
+Use ddnsupdater2
+
 # Usage
 Apply patch file as usual.
 
