@@ -4,7 +4,7 @@ ddclient patch to support dinahosting domains
 # DEPRECATED
 Use ddnsupdater2
 
-Or use https://github.com/alexandregz/ddns_synology_dinahosting (more manual method but works fine)
+Or use https://github.com/alexandregz/ddns_synology_dinahosting (more manual method but it works fine)
 
 # Usage
 Apply patch file as usual.
